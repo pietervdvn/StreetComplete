@@ -104,8 +104,9 @@ object QuestModule
         // ↓ 1. notes
         osmNoteQuestType,
         AddStreetWidth(o),
-        AddTrafficSignalsWaitDuration(o),
-        AddParkingLane(o)
+      //  AddTrafficSignalsWaitDuration(o),
+        AddParkingLane(o),
+        AddSidewalk(o)
         /*
         // ↓ 2. important data that is used by many data consumers
         AddRoadName(o, roadNameSuggestionsDao),
