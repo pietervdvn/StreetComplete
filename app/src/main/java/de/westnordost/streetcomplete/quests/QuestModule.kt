@@ -86,6 +86,9 @@ import de.westnordost.streetcomplete.quests.bench_backrest.AddBenchBackrest
 import de.westnordost.streetcomplete.quests.wheelchair_access.AddWheelchairAccessOutside
 import de.westnordost.streetcomplete.quests.ferry.AddFerryAccessMotorVehicle
 import de.westnordost.streetcomplete.quests.ferry.AddFerryAccessPedestrian
+import de.westnordost.streetcomplete.quests.parking_lane.AddParkingLane
+import de.westnordost.streetcomplete.quests.postbox_ref.AddTrafficSignalsWaitDuration
+import de.westnordost.streetcomplete.quests.street_width.AddStreetWidth
 import de.westnordost.streetcomplete.quests.wheelchair_access.AddWheelchairAccessToiletsPart
 
 @Module
@@ -97,10 +100,13 @@ object QuestModule
         trafficFlowSegmentsApi: TrafficFlowSegmentsApi, trafficFlowDao: WayTrafficFlowDao,
         featureDictionaryFuture: FutureTask<FeatureDictionary>
     ): QuestTypeRegistry = QuestTypeRegistry(listOf(
-        
+
         // ↓ 1. notes
         osmNoteQuestType,
-
+        AddStreetWidth(o),
+        AddTrafficSignalsWaitDuration(o),
+        AddParkingLane(o)
+        /*
         // ↓ 2. important data that is used by many data consumers
         AddRoadName(o, roadNameSuggestionsDao),
         AddPlaceName(o, featureDictionaryFuture),
@@ -189,6 +195,8 @@ object QuestModule
         AddCarWashType(o),
         AddBenchBackrest(o),
         AddTrafficSignalsButton(o)
+
+         */
     ))
 
     @Provides @Singleton fun osmNoteQuestType(): OsmNoteQuestType = OsmNoteQuestType()

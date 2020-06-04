@@ -826,5 +826,12 @@ Otherwise, you can download another keyboard in the app store. Popular keyboards
 
     <string name="unread_messages_message">You have %d unread messages in your inbox</string>
     <string name="unread_messages_button">Open Inbox</string>
+    <string name="quest_streetwidth_title">What is the width of the street here, measured curb to curb?</string>
+    <string name="quest_roadwidth_title">What is the curb-to-curb width of this street?</string>
+    <string name="quest_traffic_signals_wait_time_title">How long do these signals stay red?</string>
+    <string name="quest_traffic_light_wait_duration_hint">The duration is in seconds. If there is a button to request crossing, do not press it.</string>
+    <string name="quest_parking_lane_title">Is parallel parking possible here?</string>
+    <string name="quest_parallell_parking_no">No parking</string>
+    <string name="quest_parallell_parking_yes">Parking lane</string>
 
 </resources>

@@ -1,0 +1,28 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+        android:width="256dp"
+        android:height="256dp"
+        android:viewportWidth="256.0"
+        android:viewportHeight="256.0">
+
+    <!-- The road-->
+    <path
+        android:pathData="M0,-0h256v256h-256z"
+        android:fillColor="#808080"/>
+
+    <!-- The P -->
+    <path
+        android:pathData="M170,150l0,-100l30,0a10,10 0 1,1 0,50l-30,0"
+        android:strokeColor="#fff"
+        android:strokeWidth="20"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"/>
+
+
+    <!-- The white line indicating parking space-->
+    <path
+        android:pathData="M120,-0h8v256h-8z"
+        android:fillColor="#fff"/>
+
+
+
+</vector>
